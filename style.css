@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Typography";
-    /* background-color: #EBEBDF; */
 }
 html,body{
     scroll-behavior: smooth;
@@ -189,6 +188,7 @@ button a:hover{
 }
 .image-hero img:hover{
     transform: scale(1.1,1.1);
+   box-shadow: 0 0 10px 5px #EBEBDF;
 }
 .image{
     background-size: cover;
