@@ -328,11 +328,19 @@ button a:hover{
     background-size: cover;
     overflow: hidden;
     border-radius: 10px;
-    transition: transform 2s;
+    transition: transform 3s;
+    animation: float 3s ease-in-out infinite;
 }
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
 .projectItem1:hover{
-    box-shadow: 0 0 10px 5px #1e1758;
-    transform: scale(1.005);
+    /* box-shadow: 0 0 10px 5px #1e1758; */
+    transform: scale(1.009);
+    box-shadow: 0 25px 60px #1e1758;
     /* transition-duration: 1s; */
 }
 .projectItem1 a img{
@@ -440,9 +448,14 @@ button a:hover{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-    /* justify-content: space-evenly; */
     align-items: center;
     margin-top: 30px;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 .ser_child{
     border-radius: 10px;
@@ -454,11 +467,12 @@ button a:hover{
     flex-direction: column;
     align-items: center;
     border: 1px solid #1e1758;
-    transition: transform 1s;
+    transition: transform 3s;
 }
 .ser_child:hover{
-    box-shadow: 0 0 10px 5px #1e1758;
-    transform: scale(1.005);
+    box-shadow: 0 25px 60px #1e1758;
+    /* box-shadow: 0 0 10px 5px #1e1758; */
+    transform: scale(1.009);
 }
 .ser_child h2{
     font-size: 28px;
