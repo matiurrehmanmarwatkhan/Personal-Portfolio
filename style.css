@@ -435,7 +435,7 @@ section {
 }
 .contact-form input,
 .contact-form textarea {
-  width: 50%;
+  width: 70%;
   padding: 1rem;
   margin-bottom: 1rem;
   background: var(--surface);
@@ -448,7 +448,7 @@ section {
   border-radius: 24px;
 }
 .formbtn {
-  width: 50%;
+  width: 70%;
 }
 .gmail {
   display: flex;
