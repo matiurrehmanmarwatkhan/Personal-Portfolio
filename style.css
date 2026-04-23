@@ -294,12 +294,14 @@ section {
 /* about grid */
 .about-grid {
   display: flex;
+  justify-content: space-between;
   gap: 3rem;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: center;
 }
 .about-text {
-  flex: 1;
+  width: 30%;
 }
 .skills-chips {
   display: flex;
@@ -309,7 +311,7 @@ section {
 }
 .skill-chip {
   background: var(--surface);
-  padding: 0.5rem 1.2rem;
+  padding: 15px 20px;
   border-radius: 40px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -416,24 +418,6 @@ section {
   transition: 0.3s;
 }
 
-/* testimonials slider */
-.testimonials-slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 2rem;
-  scroll-snap-type: x mandatory;
-  padding: 1rem 0;
-}
-.testimonial-card {
-  min-width: 300px;
-  background: var(--surface);
-  border-radius: 24px;
-  padding: 1.8rem;
-  scroll-snap-align: start;
-  text-align: center;
-  border: 1px solid var(--card-border);
-}
-
 /* contact */
 .contact-container {
   display: flex;
@@ -444,10 +428,14 @@ section {
 .contact-form {
   flex: 1;
   min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 50%;
   padding: 1rem;
   margin-bottom: 1rem;
   background: var(--surface);
@@ -458,6 +446,9 @@ section {
 }
 .contact-form textarea {
   border-radius: 24px;
+}
+.formbtn {
+  width: 50%;
 }
 .gmail {
   display: flex;
@@ -507,5 +498,17 @@ footer {
   }
   .hero h1 {
     font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .about-text {
+    width: 100%;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+  .formbtn {
+    width: 100%;
   }
 }
