@@ -2,10 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MR Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" async></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Mati Ur Rehman | MERN Stack Developer</title>
+    <meta
+      name="description"
+      content="Mati Ur Rehman - MERN Stack Developer portfolio showcasing modern web applications, projects, and professional skills."
+    />
+    <meta name="author" content="Mati Ur Rehman" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
       rel="stylesheet"
@@ -14,25 +20,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="preloader" id="preloader"><div class="loader"></div></div>
+    <div class="preloader" id="preloader">
+      <div class="loader"></div>
+    </div>
     <div class="progress-bar" id="progressBar"></div>
     <div class="custom-cursor" id="cursor"></div>
-    <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
+    <div class="theme-toggle" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </div>
 
     <header>
       <div class="logo">MR.</div>
-      <div class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></div>
+      <div class="menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a><a href="#about">About</a
-        ><a href="#skills">Skills</a><a href="#projects">Projects</a
-        ><a href="#experience">Experience</a
-        ><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </div>
     </header>
 
     <main>
+      <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="hero-content">
           <div class="greet">HELLO, I'M</div>
@@ -40,58 +56,54 @@
           <div class="typed-container">
             <span id="typedOutput"></span><span class="cursor-blink">|</span>
           </div>
-          <p
-            style="
-              margin: 1.5rem 0;
-              color: var(--text-secondary);
-              max-width: 500px;
-            "
-          >
+          <p>
             Crafting scalable, high-performance web apps with the MERN stack.
             Let's build something extraordinary.
           </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+          <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Hire Me</a>
             <a href="#projects" class="btn btn-outline">View Work</a>
           </div>
         </div>
         <div class="hero-image">
-          <img src="image/img/protfolio_image.png" alt="Profile" />
+          <img
+            src="image/img/protfolio_image.png"
+            alt="Mati Ur Rehman Portfolio"
+          />
         </div>
       </section>
 
+      <!-- About Section -->
       <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-grid">
           <div class="about-text">
-            <p style="margin-bottom: 1rem; font-size: 20px">
+            <p>
               I'm a passionate MERN Stack Developer with a keen eye for modern
               UI/UX. I build full-stack applications that are fast, scalable,
               and user-centric. Currently diving deeper into microservices and
               cloud deployment.
             </p>
             <div class="skills-chips">
-              <span class="skill-chip">MongoDB</span
-              ><span class="skill-chip">Express.js</span
-              ><span class="skill-chip">React.js</span
-              ><span class="skill-chip">Node.js</span
-              ><span class="skill-chip">TailwindCSS</span
-              ><span class="skill-chip">TypeScript</span>
+              <span class="skill-chip">MongoDB</span>
+              <span class="skill-chip">Express.js</span>
+              <span class="skill-chip">React.js</span>
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">TailwindCSS</span>
+              <span class="skill-chip">TypeScript</span>
             </div>
             <a href="image/Simple CV.pdf" class="btn btn-outline"
               >Download CV <i class="fas fa-download"></i
             ></a>
           </div>
           <div class="hero-image">
-            <img
-              src="image/img/about image.png"
-              style="width: 420px; border-radius: 20%"
-            />
+            <img src="image/img/about image.png" alt="About Mati Ur Rehman" />
           </div>
         </div>
       </section>
 
-      <section id="skills" style="background: var(--bg-secondary)">
+      <!-- Skills Section -->
+      <section id="skills">
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-container" id="skillsContainer">
           <div class="skill-card">
@@ -129,11 +141,15 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid" id="projectsGrid">
           <div class="project-card">
-            <img src="image/projects/react dashboard.png" alt="project" />
+            <img
+              src="image/projects/react dashboard.png"
+              alt="React Dashboard"
+            />
             <div class="project-info">
               <h3>React Dashboard</h3>
               <p>
@@ -144,9 +160,12 @@
               <div class="project-links">
                 <a
                   href="https://github.com/matiurrehmanmarwatkhan/React-Dashboard"
+                  target="_blank"
                   ><i class="fab fa-github"></i> Code</a
-                ><a
+                >
+                <a
                   href="https://matiurrehmanmarwatkhan.github.io/React-Dashboard/"
+                  target="_blank"
                   >Live Demo →</a
                 >
               </div>
@@ -155,7 +174,7 @@
           <div class="project-card">
             <img
               src="image/projects/Screenshot 2026-04-06 224256.png"
-              alt="project"
+              alt="Hackathon Project"
             />
             <div class="project-info">
               <h3>Hackathon Project</h3>
@@ -167,10 +186,12 @@
               <div class="project-links">
                 <a
                   href="https://github.com/matiurrehmanmarwatkhan/Mati-Ur-Rehman-Hackathon-Project"
-                  ><i class="fab fa-github"></i> Code</a
-                ><a
                   target="_blank"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+                <a
                   href="https://matiurrehmanmarwatkhan.github.io/Mati-Ur-Rehman-Hackathon-Project/"
+                  target="_blank"
                   >Live Demo →</a
                 >
               </div>
@@ -179,7 +200,7 @@
           <div class="project-card">
             <img
               src="image/projects/Screenshot 2026-04-06 224111.png"
-              alt="project"
+              alt="Todo List"
             />
             <div class="project-info">
               <h3>Todo List</h3>
@@ -190,10 +211,12 @@
               <div class="project-links">
                 <a
                   href="https://github.com/matiurrehmanmarwatkhan/Dom-Assigment-Ten"
-                  ><i class="fab fa-github"></i> Code</a
-                ><a
                   target="_blank"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+                <a
                   href="https://matiurrehmanmarwatkhan.github.io/Dom-Assigment-Ten/"
+                  target="_blank"
                   >Live Demo →</a
                 >
               </div>
@@ -202,23 +225,25 @@
         </div>
       </section>
 
-      <section id="experience" style="background: var(--bg-secondary)">
+      <!-- Experience Section -->
+      <section id="experience">
         <h2 class="section-title">Education & Experience</h2>
         <div class="timeline">
           <div class="timeline-item">
             <h3>🎓 SMIT Web Development Course</h3>
-            <p style="color: var(--accent)">2025 - Present</p>
+            <p class="timeline-date">2025 - Present</p>
             <p>Full-stack MERN specialization, building real-world projects.</p>
           </div>
           <div class="timeline-item">
             <h3>📘 FSC Computer Science</h3>
-            <p style="color: var(--accent)">2023 - 2025</p>
+            <p class="timeline-date">2023 - 2025</p>
             <p>G H S S Darra Pezu - Strong programming fundamentals.</p>
           </div>
         </div>
       </section>
 
-      <section id="contact" style="background: var(--bg-secondary)">
+      <!-- Contact Section -->
+      <section id="contact">
         <h2 class="section-title">Let's Connect</h2>
         <div class="contact-container">
           <div class="contact-form">
@@ -241,20 +266,27 @@
                 required
                 id="contactMsg"
               ></textarea>
-              <button type="submit" class="btn formbtn btn-primary">
+              <button type="submit" class="btn btn-primary formbtn">
                 Send Message <i class="fas fa-paper-plane"></i>
               </button>
             </form>
           </div>
-          <div class="gmail">
-            <p>
-              <i class="fas fa-envelope"></i> matiurrehmanmarwatkhan@gmail.com
-            </p>
-            <p><i class="fas fa-phone-alt"></i> +92 3270950418</p>
+          <div class="contact-info">
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <p>matiurrehmanmarwatkhan@gmail.com</p>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-phone-alt"></i>
+              <p>+92 3270950418</p>
+            </div>
             <div class="social-links">
-              <a href="https://github.com/matiurrehmanmarwatkhan"
-                ><i class="fab fa-github"></i></a
-              ><a
+              <a
+                href="https://github.com/matiurrehmanmarwatkhan"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
                 href="https://www.linkedin.com/in/mati-ur-rehman-8bbb44376/"
                 target="_blank"
                 ><i class="fab fa-linkedin"></i
@@ -264,6 +296,11 @@
         </div>
       </section>
     </main>
-    <footer><p>© 2026 Mati Ur Rehman | MERN Stack Developer</p></footer>
+
+    <footer>
+      <p>© 2026 Mati Ur Rehman | MERN Stack Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
